@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  
+
   def index
     @students = Student.all
   end
@@ -11,9 +11,9 @@ class StudentsController < ApplicationController
  def new
  end
 
- def create 
+ def create
    @student = Student(first_name: params[:first_name],last_name: params[:last_name])
    params.inspect
  end
- 
+
 end
